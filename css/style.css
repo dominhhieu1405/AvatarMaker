@@ -13,6 +13,7 @@
     border: 2px dashed rgba(255, 255, 255, 0.7);
     padding: 1rem;
     position: relative;
+    aspect-ratio: 1/1;
 }
 
 .image-area::before {
@@ -29,8 +30,10 @@
 }
 
 .image-area .preview {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 500px;
+    max-height: 500px;
     position: relative;
     display: block;
 }
@@ -49,8 +52,7 @@ body {
     background-color: #757f9a;
     background-image: linear-gradient(147deg, #757f9a 0%, #d7dde8 100%);
 }
-.image-area img {
-    width: 500px!important;
-    height: 500px!important;
+.preview img {
+    width: 100%;
+    height: 100%;
 }
-/*
